@@ -1,9 +1,11 @@
 import React from 'react';
+import Layout from './components/Layout';
 
-function SingUpPage () {
+const SingUpPage = () => {
   return (
-    <>
-    </>
+    <Layout>
+      SingUpPage
+    </Layout>
   )
 }
 

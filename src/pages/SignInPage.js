@@ -1,9 +1,12 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
-function SingInPage () {
+
+const SingInPage = () => {
   return (
-    <>
-    </>
+    <Layout>
+      SingInPage
+    </Layout>
   )
 }
 
