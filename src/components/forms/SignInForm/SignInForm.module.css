@@ -6,7 +6,7 @@
   width: 100%;
   color:white;
 }
-.signInInfo{
+.signInTitle{
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 3px;
@@ -36,7 +36,6 @@
   font-size: 14px;
   line-height: 33px;
   cursor: pointer;
-
 }
 .buttonLogin{
   height: 64px;
@@ -50,6 +49,4 @@
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
-
-  
 }
