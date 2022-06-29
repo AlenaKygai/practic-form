@@ -19,21 +19,27 @@ const SignInForm = (props) =>{
       initialValues={initialValues}
       onSubmit={onSubmit}
       validationSchema={SIGN_IN_SCHEMA}>{
-        (fomikProps)=>{
+        (formikProps)=>{
         return( 
       <Form className={styles.singInForm}> 
-        <h2 className={styles.signInInfo}>LOGIN TO YOUR ACCOUNT</h2>
+
+        <h2 className={styles.signInTitle}>LOGIN TO YOUR ACCOUNT</h2>
+
         <InputWrapper name='email' placeholder='Email address'/>
         <InputWrapper name='password' placeholder='Password'/>
+
         <div className={styles.fieldContainer}>
           <label className={styles.rememberMe}>
-            <Field type="checkbox" name="rememberMe" />
+            <Field type='checkbox' name='rememberMe' value='rememberMe'/>
             Remember Me
           </label>
           <a href="https://accounts.google.com/" className={styles.forgotPass}> Forgot Password</a>
         </div>
+
         <input type="submit"  value='Login'  className={styles.buttonLogin}/>
+        
         <a href="https://accounts.google.com/" className={styles.googleSignIn}> Sign in with Google</a>
+
       </Form>)
       }}
     </Formik>
