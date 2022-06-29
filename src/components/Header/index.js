@@ -1,15 +1,19 @@
 import React from 'react';
-import styles from './Header.module.css'
+import styles from './Header.module.css';
+import {
+  Link,
+} from "react-router-dom";
+import {ROUTES} from '../../constants/index';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <a href='/' className={styles.headerLogo}>
+      <Link to={ROUTES.SIGN_IN} className={styles.headerLogo}>
         <img src='/static/images/logo.png' alt='logo'/>
-      </a>
-      <a href='/signUp' className={styles.headerButton}>
+      </Link>
+      <Link to={ROUTES.SIGN_UP} className={styles.headerButton}>
         SignUp
-      </a>
+      </Link>
     </header>
   )
 }
