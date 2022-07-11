@@ -1,28 +1,64 @@
 .singUpForm{
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 100px auto 150px auto;
   max-width: 555px;
   width: 100%;
   color:white;
 }
 .signUpTitle{
+  margin: 0;
   font-size: 38px;
   font-weight: 600;
   letter-spacing: 3px;
   text-align: center;
 }
 .signUpSubTitle{
+  max-width: 480px;
+  margin: 5px auto 25px auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 27px; 
-  margin-bottom: 18px; 
+}
+.columInputWrapper{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+.columInputWrapper label{
+  width: calc(50% - 14px); 
+}
+.joinWrapper{
+  display: flex;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  padding: 14px 14px 1.15rem;
+}
+.joinLabel{
+  margin-left: 10px;
+}
+.joinLabelTitile{
+  margin: 0;
+  font-size: 20px; 
+  padding-bottom: 10px; 
+}
+.joinLabelDiscription{
+  margin: 0;
+  font-size: 12px;
+}
+.allowCheckBoxWrapper{
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.allowCheckBox{
+  margin: 0 10px 0 20px;
 }
 .buttonLogin{
   height: 64px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border:0;
   border-radius: 4px;
   background-color: #28d2d0;
@@ -30,6 +66,14 @@
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+}
+.buttonLogin:disabled{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.termsOfService{
+  text-align: center;
+  margin-bottom: 5px;
 }
 .googleSignUp{
   text-align: center;
