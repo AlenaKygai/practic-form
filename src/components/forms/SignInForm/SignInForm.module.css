@@ -1,13 +1,14 @@
 .singInForm{
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 100px auto 150px auto;
   max-width: 555px;
   width: 100%;
   color:white;
 }
 .signInTitle{
-  font-size: 30px;
+  margin-top: 0;
+  font-size: 38px;
   font-weight: 600;
   letter-spacing: 3px;
   text-align: center;
